@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: |
+  - Firsr buket from template
+Parameters:
+  S3BucketName:
+    Type: String
+    Description: Enter Your Bucet Name
+Resources:
+  MyS3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: !Ref S3BucketName
